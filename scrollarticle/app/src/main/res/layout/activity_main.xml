@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="naman.killtime.scrollarticle.MainActivity">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_regular"
+        android:text="Articles in English Grammar"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article_subheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_regular"
+                android:text="Articles"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="I like books – books is a plural noun. It is used about books generally, not specific books, so it takes no article. Blood is thicker than water – blood and water are singular, uncountable nouns. They are used in a general sense, therefore they do not need an article. I bought two books – you do not need an article, because you already have the word two. I bought some books – you do not need an article, because you already have the word some. How do you know whether you need an article and which article to use? A single, countable noun must have an article if there is no other number, determiner or possessive (e.g. two, our, this). If the noun is plural, an article may not be necessary. Look first at your noun: our house – you do not need an article, because you already have the possesive our. this year – you do not need an article, because you already have the determiner this. car – you need an article, because this is a singular countable noun with no determiner already. trees – you may need an article, depending on whether the noun is definite or not. For example: Trees are usually green – no article is needed, because you are talking generally and the noun is not definite, i.e. you are not talking about specific trees. The trees in the park are green – the article is needed because you have specified which trees you are talking about. Indefinite article (a/an) If the noun is singular and countable, and this is the first time you have mentioned it, then you will usually need the indefinite article: I bought a book – we do not know which book. There is a bird outside – we do not know anything about the bird. Measurements and rates also take the indefinite article: Three times a week If the noun starts with a vowel sound, then the article an is used: an ear, an uncle, an hour If the noun starts with a consonant sound, then the article a is used: a school, a university Definite article (the) If your reader or listener understands what you are referring to, then you will usually need the definite article: I bought a book last week. The book is about trees. (You have just mentioned the book, so you both know which one.) We went to a wedding yesterday. The bride wore a lovely dress. (You have not mentioned the bride before, but you both know she is connected to the wedding.) Some things are taken to be common knowledge in English and therefore take the definite article: Decades – He was born in the 1920s. Currencies –The dollar is getting stronger against the pound. Superlatives and ordinals – The second book in the series is the best. Oceans, seas and many rivers –The Nile flows into the Mediterranean. Plural or ‘united’ countries – The Maldives are much smaller than the United States of America. Adjectives used as nouns – The poor will always be a challenge for the rich in any country. Many organisations –The World Health Organization has a detailed definition of health. A scientific categorisation – The zebra is native to Africa. A symbol – The Merlion is a symbol of Singapore. Unique people, places or things – The prime minister said she would call a conference on changes affecting the earth’s climate" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

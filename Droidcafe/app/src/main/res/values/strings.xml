@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Droid cafe</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="droid_deserts">Droid Deserts</string>
+    <string name="donuts">Donuts are glazed and sprinkled with candy.</string>
+    <string name="froyo">FroYo is premium self-serve frozen yogurt</string>
+    <string name="iceccream">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="thanks">Thank You! , This feature will be added soon</string>
+    <string name="name_text_label">Name</string>
+    <string name="enter_name_hint">Enter Your Name</string>
+    <string name="address_label_text">Address</string>
+    <string name="address_hint">Enter Address</string>
+    <string name="order_txtview">Order :- </string>
+    <string name="phone_no_label">Phone No:-</string>
+    <string name="phone_hint">Enter Phone No</string>
+    <string name="note_label">Note</string>
+    <string name="enter_notes_text">Enter Notes</string>
+    <string name="choose_a_delivery_method">Choose a delivey method:-</string>
+    <string name="same_day_txt">Same day messenger service</string>
+    <string name="next_day_ground_deliverytxt">Next day ground delivery</string>
+    <string name="pick_uptxt">Pick Up</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

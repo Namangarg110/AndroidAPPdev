@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">scroll article</string>
+    <string name="article_title">Article title</string>
+    <string name="article_subtitle">article subtitle</string>
+    <string name="article_text">article text</string>
+    <string name="by_beebom">by beebom</string>
+
+</resources>
