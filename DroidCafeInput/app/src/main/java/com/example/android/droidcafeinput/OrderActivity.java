@@ -27,20 +27,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/**
- * This activity handles radio buttons for choosing a delivery method for an
- * order, a spinner for setting the label for a phone number, and EditText input
- * controls.
- */
+
 public class OrderActivity extends AppCompatActivity
         implements AdapterView.OnItemSelectedListener{
 
-    /**
-     * Sets the content view to activity_order, and gets the intent and its
-     * data. Also creates an array adapter and layout for a spinner.
-     *
-     * @param savedInstanceState Saved instance state bundle.
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,12 +69,7 @@ public class OrderActivity extends AppCompatActivity
         }
     }
 
-    /**
-     * Checks which radio button was clicked and displays a toast message to
-     * show the choice.
-     *
-     * @param view The radio button view.
-     */
+
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -114,11 +99,7 @@ public class OrderActivity extends AppCompatActivity
         }
     }
 
-    /**
-     * Displays the actual message in a toast message.
-     *
-     * @param message Message to display.
-     */
+
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message,
                 Toast.LENGTH_SHORT).show();
