@@ -785,6 +785,8 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
 id CTRL
+id Date_button
+id Delivery_date_tv
 id FUNCTION
 id META
 id SHIFT
@@ -826,7 +828,6 @@ id basic
 id beginning
 id blocking
 id bottom
-id button
 id buttonPanel
 id cancel_action
 id center
@@ -917,6 +918,7 @@ id phone_label
 id phone_text
 id pickup
 id pin
+id placeOrder
 id progress_circular
 id progress_horizontal
 id radio
@@ -1048,6 +1050,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_date_picker
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1120,6 +1123,8 @@ string bottom_sheet_behavior
 string change_dessert
 string character_counter_pattern
 string choose_delivery_method
+string date
+string datepicker
 string donut_order_message
 string donuts
 string enter_address_hint
@@ -1128,6 +1133,7 @@ string enter_note_hint
 string enter_phone_hint
 string froyo
 string froyo_order_message
+string hello_blank_fragment
 string ice_cream_order_message
 string ice_cream_sandwiches
 string intro_text

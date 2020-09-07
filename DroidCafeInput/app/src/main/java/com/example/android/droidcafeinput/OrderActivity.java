@@ -18,10 +18,12 @@ package com.example.android.droidcafeinput;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -40,6 +42,7 @@ public class OrderActivity extends AppCompatActivity
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.order_textview);
+
         if (message==null)
         {
             message="PLEASE ORDER FIRST";
@@ -118,4 +121,32 @@ public class OrderActivity extends AppCompatActivity
     public void onNothingSelected(AdapterView<?> adapterView) {
         // Do nothing.
     }
+
+    public void showDateButton(View view)
+    {
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(),
+                getString(R.string.datepicker));
+
+    }
+
+    public void processDatePickerResult(int year, int month, int day) {
+        String month_string = Integer.toString(month + 1);
+        String day_string = Integer.toString(day);
+        String year_string = Integer.toString(year);
+        String dateMessage = (month_string +
+                "/" + day_string +
+                "/" + year_string);
+
+        Button date =findViewById(R.id.Date_button);
+        date.setText(dateMessage);
+        Toast.makeText(OrderActivity.this,  dateMessage,
+                Toast.LENGTH_SHORT).show();
+    }
+
+    public void placeOrder(View view) {
+        String order = "Your Order Has Been Placed, Thankyou for Shopping with us ";
+        displayToast(order);
+    }
 }
+
