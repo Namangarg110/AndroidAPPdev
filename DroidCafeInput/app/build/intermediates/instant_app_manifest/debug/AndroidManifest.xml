@@ -28,8 +28,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.droidcafeinput.OrderActivity" />
+        <activity
+            android:name="com.example.android.droidcafeinput.OrderActivity"
+            android:label="@string/complete_order"
+            android:parentActivityName="com.example.android.droidcafeinput.MainActivity" >
+        </activity>
 
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.1.0" />

@@ -1123,6 +1123,7 @@ string bottom_sheet_behavior
 string change_dessert
 string character_counter_pattern
 string choose_delivery_method
+string complete_order
 string date
 string datepicker
 string donut_order_message
