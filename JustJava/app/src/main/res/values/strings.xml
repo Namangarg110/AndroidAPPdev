@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="final_label">\"Thank you! \n You Ordered %d Coffee \n Your Amount = $%d \"</string>
+</resources>
