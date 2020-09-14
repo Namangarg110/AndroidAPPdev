@@ -27,16 +27,16 @@ public class Numbers extends AppCompatActivity {
 //        num[9]="ten";
 
         ArrayList<words> numbers=  new ArrayList<words>();
-        numbers.add(new words("one","lutti"));
-        numbers.add(new words("two","otiiko"));
-        numbers.add(new words("three","tolookusu"));
-        numbers.add(new words("four","oyyisa"));
-        numbers.add(new words("five","massokka"));
-        numbers.add(new words("six","temmokka"));
-        numbers.add(new words("seven","kenekaku"));
-        numbers.add(new words("eight","kawinta"));
-        numbers.add(new words("nine","wo'e"));
-        numbers.add(new words("ten","na'aacha"));
+        numbers.add(new words("one","lutti",R.drawable.number_one));
+        numbers.add(new words("two","otiiko",R.drawable.number_two));
+        numbers.add(new words("three","tolookusu",R.drawable.number_three));
+        numbers.add(new words("four","oyyisa",R.drawable.number_four));
+        numbers.add(new words("five","massokka",R.drawable.number_five));
+        numbers.add(new words("six","temmokka",R.drawable.number_six));
+        numbers.add(new words("seven","kenekaku",R.drawable.number_seven));
+        numbers.add(new words("eight","kawinta",R.drawable.number_eight));
+        numbers.add(new words("nine","wo'e",R.drawable.number_nine));
+        numbers.add(new words("ten","na'aacha",R.drawable.number_ten));
 
         //Log.v("Number Activity ", "Word at index 0 : " + numbers.get(0));
         // now let's add some views to number activity dynamically!! yay
@@ -59,7 +59,7 @@ public class Numbers extends AppCompatActivity {
 //
 //        listView.setAdapter(itemsAdapter);
 
-        wordsAdapter wordAdapter = new wordsAdapter(this, numbers);
+        wordsAdapter wordAdapter = new wordsAdapter(this, numbers,R.color.category_numbers);
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(wordAdapter);

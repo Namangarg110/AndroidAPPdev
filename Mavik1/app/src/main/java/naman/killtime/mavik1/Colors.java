@@ -27,14 +27,14 @@ public class Colors extends AppCompatActivity {
 //        num[9]="ten";
 
         ArrayList<words> numbers=  new ArrayList<words>();
-        numbers.add(new words("red", "weṭeṭṭi"));
-        numbers.add(new words("mustard yellow", "chiwiiṭә"));
-        numbers.add(new words("dusty yellow", "ṭopiisә"));
-        numbers.add(new words("green", "chokokki"));
-        numbers.add(new words("brown", "ṭakaakki"));
-        numbers.add(new words("gray", "ṭopoppi"));
-        numbers.add(new words("black", "kululli"));
-        numbers.add(new words("white", "kelelli"));
+        numbers.add(new words("red", "weṭeṭṭi",R.drawable.color_red));
+        numbers.add(new words("mustard yellow", "chiwiiṭә",R.drawable.color_mustard_yellow));
+        numbers.add(new words("dusty yellow", "ṭopiisә",R.drawable.color_dusty_yellow));
+        numbers.add(new words("green", "chokokki",R.drawable.color_green));
+        numbers.add(new words("brown", "ṭakaakki",R.drawable.color_brown));
+        numbers.add(new words("gray", "ṭopoppi",R.drawable.color_gray));
+        numbers.add(new words("black", "kululli",R.drawable.color_black));
+        numbers.add(new words("white", "kelelli",R.drawable.color_white));
 
 
         //Log.v("Number Activity ", "Word at index 0 : " + numbers.get(0));
@@ -58,7 +58,7 @@ public class Colors extends AppCompatActivity {
 //
 //        listView.setAdapter(itemsAdapter);
 
-        wordsAdapter wordAdapter = new wordsAdapter(this, numbers);
+        wordsAdapter wordAdapter = new wordsAdapter(this, numbers,R.color.category_colors);
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(wordAdapter);

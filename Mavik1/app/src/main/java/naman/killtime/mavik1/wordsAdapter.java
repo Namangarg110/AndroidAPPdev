@@ -10,14 +10,18 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 
 public class wordsAdapter extends ArrayAdapter<words> {
 
-    public wordsAdapter(Activity context , ArrayList<words> numbers)
+    private int mColorResourceId;
+
+    public wordsAdapter(Activity context , ArrayList<words> numbers ,int colorResourceId)
     {
         super(context,0,numbers);
+        mColorResourceId=colorResourceId;
     }
 
     @Override
@@ -30,6 +34,7 @@ public class wordsAdapter extends ArrayAdapter<words> {
         }
 
         // Get the {@link AndroidFlavor} object located at this position in the list
+
         words currentWord = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
@@ -46,7 +51,19 @@ public class wordsAdapter extends ArrayAdapter<words> {
         defaultTextView.setText(currentWord.getDefaultTranslation());
 
 
+        ImageView image = listItemView.findViewById(R.id.imageView);
+        if (currentWord.hasImage()) {
 
+            image.setImageResource(currentWord.getImageResourceIdId());
+            image.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            image.setVisibility(View.GONE);
+        }
+        View textContainer =listItemView.findViewById(R.id.text_container);
+        int color = ContextCompat.getColor(getContext(),mColorResourceId);
+        textContainer.setBackgroundColor(color);
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;

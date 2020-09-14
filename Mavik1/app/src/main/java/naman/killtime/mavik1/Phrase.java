@@ -59,7 +59,7 @@ public class Phrase extends AppCompatActivity {
 //
 //        listView.setAdapter(itemsAdapter);
 
-        wordsAdapter wordAdapter = new wordsAdapter(this, numbers);
+        wordsAdapter wordAdapter = new wordsAdapter(this, numbers,R.color.category_phrases);
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(wordAdapter);
