@@ -10,17 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Family"
-            android:label="@string/category_family">
+            android:label="@string/category_family"
+            android:parentActivityName="naman.killtime.mavik1.MainActivity"
+            >
 
         </activity>
         <activity android:name=".Phrase"
             android:label="@string/category_phrases"
+            android:parentActivityName="naman.killtime.mavik1.MainActivity"
             />
         <activity android:name=".Colors"
             android:label="@string/category_colors"
+            android:parentActivityName="naman.killtime.mavik1.MainActivity"
             />
         <activity android:name=".Numbers"
             android:label="@string/category_numbers"
+            android:parentActivityName="naman.killtime.mavik1.MainActivity"
             />
         <activity android:name=".MainActivity">
             <intent-filter>
